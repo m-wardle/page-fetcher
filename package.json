@@ -1,0 +1,26 @@
+{
+  "name": "page-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetcher.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-wardle/page-fetcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-wardle/page-fetcher/issues"
+  },
+  "homepage": "https://github.com/m-wardle/page-fetcher#readme"
+}
