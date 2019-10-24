@@ -26,7 +26,9 @@ const fetcher = function(url, filePath) {
           } if (answer === "\u0059") { //Y
             rl.close();
             fs.writeFile(filePath, body, () => {
-              console.log(`Downloaded and saved to ${filePath}`);
+              fs.stat(filePath, (err, stat) => {
+                console.log(`Downloaded and saved ${stat.size} bytes to ${filePath}.`);
+              });
             });
           }
         });
@@ -36,3 +38,7 @@ const fetcher = function(url, filePath) {
 };
 
 fetcher(args[2], args[3]);
+
+module.exports = {
+  fetcher,
+};
